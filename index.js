@@ -1,4 +1,4 @@
-const URL = `https://api.weather.gov/gridpoints/${GRID_POINTS}/forecast`;
+const URL = `https://api.weather.gov/gridpoints/ALY/110,79/forecast`;
 
 fetch(URL)
   .then(response => response.json())
