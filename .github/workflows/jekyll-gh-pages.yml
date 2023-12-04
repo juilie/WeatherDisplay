@@ -32,6 +32,8 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
+        env:
+          GRID_POINTS: ${{ secrets.GRID_POINTS }}  
         with:
           source: ./
           destination: ./_site

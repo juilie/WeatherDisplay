@@ -1,5 +1,3 @@
-const GRID_POINTS = "ALY/110,79";
-
 const URL = `https://api.weather.gov/gridpoints/${GRID_POINTS}/forecast`;
 
 fetch(URL)
