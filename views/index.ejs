@@ -10,16 +10,24 @@
 </head>
 <body>
     <div id="weather-info">
-        <h1>Weather Information</h1>
+        <div class="flex">
+            <img src="/totoro.png" width="100">
+            <h1>церемонія !</h1>
+            <img src="/totoro.png" width="100">
+        </div>
 
         <h2><%= name %> <%= temperature %>°F</h2>
-        <p> Wind: <%= windSpeed %></p>
-        <p><%= shortForecast %></p>
+        <!-- <p> Wind: <%= windSpeed %></p> -->
+        <p class="short"><%= shortForecast %></p>
         <p><%= detailedForecast %></p>
         <h2><%= laterForecast.name %> <%= laterForecast.temperature %>°F</h2>
-          <p>Wind: <%= laterForecast.windSpeed %></p>
-          <p><%= laterForecast.shortForecast %></p>
-          <p><%= laterForecast.detailedForecast %></p>
+        <!-- <p>Wind: <%= laterForecast.windSpeed %></p> -->
+        <p class="short"><%= laterForecast.shortForecast %></p>
+        <p><%= laterForecast.detailedForecast %></p>
+
+        <h2><%= finalForecast.name %> <%= finalForecast.temperature %>°F</h2>
+          <p class="short"><%= finalForecast.shortForecast %></p>
+          <p><%= finalForecast.detailedForecast %></p>
 
     </div>
 </body>

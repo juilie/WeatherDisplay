@@ -1,0 +1,40 @@
+:root {
+    --nook-width: 758px;
+    --nook-height: 1024px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: var(--nook-width);
+    max-height: var(--nook-height);
+    overflow: hidden;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    /* margin: 0 auto; */
+    justify-content: center;
+}
+
+h1 {
+    letter-spacing: 6px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.short {
+    font-size: large;
+    font-weight: bold;
+}

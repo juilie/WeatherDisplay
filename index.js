@@ -34,6 +34,7 @@ app.get('/', async (req, res) => {
     } = currentForecast;
 
     const laterForecast = data.properties.periods[1];
+    const finalForecast = data.properties.periods[2];
 
     // Render the index.ejs template with weather data
     res.render('index', {
@@ -42,7 +43,8 @@ app.get('/', async (req, res) => {
       windSpeed,
       shortForecast,
       detailedForecast,
-      laterForecast
+      laterForecast,
+      finalForecast
     });
   } catch (error) {
     console.error('Error fetching weather:', error.message);
