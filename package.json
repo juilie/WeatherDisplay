@@ -1,11 +1,14 @@
 {
-  "name": "weathersign",
+  "name": "weatherdisplay",
   "version": "1.0.0",
-  "description": "Weather sign for nook",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "xkcd1253",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
