@@ -1,0 +1,26 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="weather-info">
+        <h1>Weather Information</h1>
+
+        <h2><%= name %> <%= temperature %>°F</h2>
+        <p> Wind: <%= windSpeed %></p>
+        <p><%= shortForecast %></p>
+        <p><%= detailedForecast %></p>
+        <h2><%= laterForecast.name %> <%= laterForecast.temperature %>°F</h2>
+          <p>Wind: <%= laterForecast.windSpeed %></p>
+          <p><%= laterForecast.shortForecast %></p>
+          <p><%= laterForecast.detailedForecast %></p>
+
+    </div>
+</body>
+</html>
